@@ -46,6 +46,10 @@ public class Main {
                 System.out.println(player1 + " your points is: " + player_1_result);
 
             }
+            if (player_1_result >= 40) {
+                System.out.println(player1 + " you are the winner! ");
+                break;
+            }
             if ( player_1_result < MAXPOINT && player_2_result < MAXPOINT){
 
                 System.out.println(player2 + " is your turn:");
@@ -58,7 +62,13 @@ public class Main {
                 player_2_result += sum_player_2.getSum(d1,d2);
 
                 System.out.println(player2 + " your points is: " + player_2_result);
+                System.out.println();
 
+
+            }
+            if (player_2_result >= 40) {
+                System.out.println(player2 + " you are the winner! ");
+                break;
             }
 
 
